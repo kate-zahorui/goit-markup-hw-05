@@ -263,6 +263,25 @@ header .contacts {
 	justify-content: space-between;
 }
 
+.services-item {
+	position: relative;
+}
+
+.services-title {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 70px;
+	bottom: 0;
+
+	background-color: rgba(47, 48, 58, 0.8);
+	color: var(--white-color);
+	line-height: 1.14;
+	text-align: center;
+	text-transform: uppercase;
+}
 /* ---------Team--------- */
 
 .team {
@@ -424,6 +443,30 @@ header .contacts {
 .work-item:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 	/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.work-card {
+	position: relative;
+}
+
+.work-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 63px 24px;
+	background-color: rgba(33, 150, 243, 0.9);
+	color: var(--white-color);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.56;
+	opacity: 0;
+}
+
+.work-item:hover .work-overlay,
+.work-item:focus .work-overlay {
+	opacity: 1;
 }
 
 /* ---------WORK-description--------- */
